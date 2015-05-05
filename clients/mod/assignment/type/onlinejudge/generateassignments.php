@@ -125,8 +125,8 @@ if ($testform->is_cancelled()){
 	$split1 = preg_split('/delimiter/',$testpairs);
 	$split2 = $split1[1];
 	$split1 = $split1[0];
-	$split1 = preg_split('/;/',$split1);
-	$split2 = preg_split('/;/',$split2);
+	$split1 = preg_split('/;/',trim($split1));
+	$split2 = preg_split('/;/',trim($split2));
 	//На этом этапе split1 содержит входные значения, split2 соответствующие выходные
 	$cnt=0;
 	// Get a number of records as an array of objects where all the given conditions met.
